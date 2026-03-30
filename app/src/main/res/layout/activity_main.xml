@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Root layout: vertical stack -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- App title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_spark"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Input field where user types time of day -->
+    <!--suppress AndroidDomInspection -->
+    <EditText
+        android:id="@+id/inputTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_time_e_g_morning_afternoon"
+        android:inputType="0"
+        android:padding="12dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+    <!-- Button to generate suggestion -->
+    <Button
+        android:id="@+id/suggestButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_suggestion"
+        android:layout_marginTop="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Button to reset input and output -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_marginTop="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- TextView to display the result -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"/>
+
+</LinearLayout>

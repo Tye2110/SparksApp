@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SparksApp</string>
+    <string name="social_spark">Social Spark ✨</string>
+    <string name="enter_time_e_g_morning_afternoon">Enter time (e.g. Morning, Afternoon)</string>
+    <string name="get_suggestion">Get Suggestion</string>
+    <string name="reset">Reset</string>
+</resources>
